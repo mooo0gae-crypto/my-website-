@@ -1,73 +1,75 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Example</title>
     <style>
-      body {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        background-color: #FFFDD0; /* change background here *   
-  </body>
-</html>
-<title>Hello World Box</title>
-  <style>
-    body {
-      display: flex;
-      justify-content: top;   /* top horizontally */
-      align-items: top;       /* top vertically */
-      height: 100vh;             /* full height */
-      margin: 0;
-      background-color: #1C1C84; /* background */
-      font-family: serif;        /* all text serif */
-    }
+        /* Default styles for larger screens */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+        }
 
-    .box {
-    margin-top: 10vh;
-      text-align: top;
-      padding: 20px 40px;
-      border: 2px solid #fff;
-      border-radius: 12px;
-      background-color: #fff;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    }
-
-    .box h1 {
-      margin: 0 0 20px;
-      color: #000;
-    }
-
-    .box button {
-      padding: 10px 20px;
-      border: none;
-      border-radius: 6px;
-      background-color: #FFFDD0;
-      color: white;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-    .box button:hover {
-      background-color: #3333aa; /* lighter blue on hover */
-    }
-     <style>
-      body {
-        display: flex;
-        justify-content: center;  /* center horizontally */
-        height: 100vh;            /* full screen height */
-        margin: 0;
-      }
-      .container {
-        text-align: center; /* center text and button together */
-      }
-  </style>
+        /* Media query for screens smaller than 600px (e.g., mobile phones) */
+        @media screen and (max-width: 600px) {
+            body {
+                margin: 10px;
+            }
+            .container {
+                padding: 10px;
+                box-shadow: none; /* Remove shadow for mobile for a cleaner look */
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            p {
+                font-size: 0.9em;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="box">
-    <h1>Go, Back🫦</h1>
-    <button onclick="window.location.href='index.html'"><p style="color: black;">Click Me☝🏻</p></button>
-  </div>
-</body>
-
+    </head>
+<body>
+<h1 style="text-align:center;">
+    Welcome to my website 😏</h1>
     
+<p style="text-align:center;">Please click the button below😉<br />⬇️</p>
+
+<div style="text-align:center;">
+  <details>
+    <summary>Show Video</summary>
+    <video width="373" controls>
+      <source src="wow1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      <script>
+  const details = document.querySelector("details");
+  const video = document.querySelector("video");
+
+  details.addEventListener("toggle", () => {
+    if (details.open) {
+      video.play();        // auto-play when opened
+    } else {
+      video.pause();       // stop when closed
+      video.currentTime = 0; // reset to beginning
+    }
+  });
+</script>
+    </video>
+  </details>
+</div>
