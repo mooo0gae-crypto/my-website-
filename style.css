@@ -11,20 +11,27 @@ body {
   overflow: hidden;
   margin: 0;
 }
-
-.bg {
-  background: url()
-    no-repeat center center/cover;
-  position: absolute;
-  top: -30px;
-  left: -30px;
-  width: calc(100vw + 60px);
-  height: calc(100vh + 60px);
-  z-index: -1;
-  filter: blur(0px);
+body {
+    background-color:  ;
+}
+. container {
+  margin: 100px 0 0 200px;
+  width: 70%;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  gap : 10px;
 }
 
-.loading-text {
-  font-size: 50px;
-  color: #fff;
+. container img {
+width: 10%;
+height: 100%;
+object-fit: cover;
+border-radius: 10px;
+border: 2px solid rgba(255, 255, 0.,684)
+transition:all ease-in-out 0.5s;
+}
+
+. container img:hover {
+    width: 25%;
 }
